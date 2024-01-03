@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+.bg-poland {
+    background-image: url('imgs/invasion_of_poland.png'), 
+                      url('imgs/invasion_of_poland2.png'),
+                      url('imgs/invasion_of_poland3.png');
+    @media (max-width: 639px)
+    {
+        background-image: url('imgs/invasion_of_poland.png'); 
+    }
+    background-size: contain;
+    background-position: left, 20%, 36.5%;
+    background-repeat: no-repeat;
+}
+
 .circle {
     width: 12px;
     height: 12px;
@@ -38,6 +51,30 @@
     text-shadow: 0px 1px 1px floralwhite;
 }
 
+.timeline-h {
+    height: 15vh;
+    @media (max-width: 1050px)
+    {
+        height: 40vh;
+    }
+    @media (max-width: 639px)
+    {
+        height: 32.5vh;
+    }
+
+}
+
+.timeline-text {
+    font-family: Roboto;
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    @media (max-width: 900px)
+    {
+        font-size: 16px;
+    }
+}
+
 .timeline-years {
     width: 16.666667%;
     text-align: center;
@@ -45,10 +82,18 @@
     border: 1px solid rgba(255, 255, 255, 0.50);
     padding: 1px;
     box-shadow: 1px 0px 1px white;
+    @media (max-width: 639px)
+    {
+        padding: 5px;
+    }
 }
 
 .timeline-years:hover {
     background-color: rgba(255, 255, 255, 0.50)
+}
+
+.timeline-years:last-of-type {
+    box-shadow: none
 }
 
 @tailwind base;
