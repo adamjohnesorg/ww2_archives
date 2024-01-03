@@ -5,7 +5,7 @@ const TimelineSectionRight = ({ title, timelineText, year, isYearNeeded, chronNu
   return (
         <div className='flex flex-row w-full justify-center items-center gap-8'>
             <div className='flex flex-col items-center w-5/12 p-2 gap-2'>
-                <div className='bg-stone-800 w-8/12 sm:w-full text-center p-2 border border-black'>
+                <div className='bg-stone-800 w-auto sm:w-full text-center p-2 border border-black'>
                     <span className='timeline-text text-3xl sm:text-xl'>{ title }</span>
                 </div>
                 <div className='bg-stone-800 w-4/12 sm:w-11/12 text-center p-2 border border-black'>

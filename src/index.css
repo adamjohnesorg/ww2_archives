@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.bg-poland {
-    background-image: url('imgs/invasion_of_poland.png'), 
-                      url('imgs/invasion_of_poland2.png'),
-                      url('imgs/invasion_of_poland3.png');
+.bg-poland-germany {
+    background-image: url('imgs/1939/germany_invades_poland/invasion_of_poland.png'), 
+                      url('imgs/1939/germany_invades_poland/invasion_of_poland2.png'),
+                      /** The National WWII Museum **/
+                      url('imgs/1939/germany_invades_poland/invasion_of_poland3.png'),
+                      /** Britannica **/
+                      url('imgs/1939/germany_invades_poland/invasion_of_poland4.png');
+                      /** Time **/
     @media (max-width: 639px)
     {
-        background-image: url('imgs/invasion_of_poland.png'); 
+        background-image: url('imgs/1939/germany_invades_poland/invasion_of_poland.png'); 
     }
     background-size: contain;
-    background-position: left, 20%, 36.5%;
+    background-position: left, 20%, 36.5%, 64%;
+    background-repeat: no-repeat;
+}
+
+.bg-poland-soviet {
+    background-image: url('imgs/1939/sovietunion_invades_poland/su_invades_poland.png'); 
+                
+    @media (max-width: 639px)
+    {
+        background-image: url('imgs/1939/sovietunion_invades_poland/su_invades_poland.png'); 
+    }
+    background-size: contain;
+    background-position: left;
     background-repeat: no-repeat;
 }
 

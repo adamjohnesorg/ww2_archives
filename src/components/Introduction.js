@@ -18,7 +18,7 @@ const Introduction = () =>
                 </p>
                 <br></br>
                 <p className='text-white font-roboto_condensed font-light text-2xl sm:text-lg text-center'>
-                    Information regarding the war can be found by clicking any of the years 
+                    In-depth information regarding the war can be found by clicking any of the years 
                     on the ribbon at the top; additionally, a brief timeline overview is illustrated
                     below.
                 </p>
